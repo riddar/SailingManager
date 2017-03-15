@@ -68,5 +68,16 @@ namespace SailingManagers
             RegisterWindow registerWindow = new View.RegisterWindow();
             registerWindow.Show();
         }
+
+        private void Entrypage_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void RegattaPage_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            RegattaUserControl regattaUserControl = new RegattaUserControl();
+            
+        }
     }
 }

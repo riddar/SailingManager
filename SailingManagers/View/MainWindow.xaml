@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:UC="clr-namespace:SailingManagers.View"
         xmlns:local="clr-namespace:SailingManagers"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="600">
@@ -26,13 +27,13 @@
             <ColumnDefinition Width="*"/>
           
         </Grid.ColumnDefinitions>
-        <TextBox  Height="20" Width="150" Grid.ColumnSpan="3"></TextBox>
+        <TextBox  Height="20" Width="150" Grid.ColumnSpan="3" ></TextBox>
         <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" IsHitTestVisible="False" Text="Search for an entry"  Width="150" Foreground="DarkGray"/>
 
        
         <StackPanel Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="4">
 
-            <ListBox MinHeight="200" MinWidth="150">
+            <ListBox MinHeight="200" MinWidth="150" MouseDoubleClick="Entrypage_DoubleClick">
                 Här
             ska
                 sökningar
@@ -40,11 +41,14 @@
                 upp
             </ListBox>
         </StackPanel>
+        <StackPanel Name="UserControl"  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="7" Grid.RowSpan="2">
+            <!--<UC:RegattaUserControl/>-->
+        </StackPanel>
         <TextBox Grid.Column="4" Grid.Row="0" Height="20" Width="150" Grid.ColumnSpan="3"></TextBox>
         <TextBlock  Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="3" IsHitTestVisible="False" Text="Search for an regatta"  Width="150" Foreground="DarkGray"/>
         <StackPanel Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="4">
-            
-            <ListBox MinHeight="200" MinWidth="200"> Här nedanför ska regattas listas</ListBox>
+
+            <ListBox MinHeight="200" MinWidth="200" MouseDoubleClick="RegattaPage_DoubleClick"> Här nedanför ska regattas listas</ListBox>
           
       </StackPanel>
             <Button  Height="40" Width="100" Click="Båtklubb_OnClick" Grid.Column="6" Grid.Row="5"  Content="Båtklubb"/>

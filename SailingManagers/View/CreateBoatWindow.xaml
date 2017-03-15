@@ -24,18 +24,16 @@
             <ColumnDefinition Width="*"/>
 
         </Grid.ColumnDefinitions>
-       
-            <StackPanel >
+
+        <StackPanel >
             <TextBlock Width="150">Lägg till en båt</TextBlock>
-        <TextBlock Width="150">Båtnamn</TextBlock>
+            <TextBlock Width="150">Båtnamn</TextBlock>
             <TextBox Width="150">Mata in båtnamn</TextBox>
             <TextBlock Width="150">Handikapp</TextBlock>
             <TextBox Width="150">Mata in handikapp</TextBox>
-        </StackPanel>
-        <StackPanel Grid.Row="3" Grid.Column="0" Margin="10" Grid.RowSpan="3">
-            
-            <TextBox>Sök bland båtar</TextBox>
-            <TextBlock MinWidth="80" MinHeight="100">Här ska sökningarna komma upp</TextBlock>
+            <TextBlock >Båtnummer</TextBlock>
+            <TextBox>Lägg till båtnummer</TextBox>
+
         </StackPanel>
         <Button Height="30" Width="60" Click="Cancel_OnClick" Content="Avbryt" Grid.Column="1" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
         <Button Height="30" Width="60" Click="Save_OnClick" Content="Spara" Grid.Column="3" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>

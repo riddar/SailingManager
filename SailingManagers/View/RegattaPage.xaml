@@ -9,6 +9,26 @@
       Title="RegattaPage">
 
     <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
         <TextBlock>Regattas</TextBlock>
+     
+        <Button Height="30" Width="60" Click="GoBack_OnClick" Content="Tillbaka" Grid.Column="3" Grid.Row="4" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
     </Grid>
 </Page>

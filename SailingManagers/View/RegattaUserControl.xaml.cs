@@ -12,33 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SailingManagers;
 
 namespace SailingManagers.View
 {
     /// <summary>
-    /// Interaction logic for RegattaPage.xaml
+    /// Interaction logic for RegattaUserControl.xaml
     /// </summary>
-   
-    public partial class RegattaPage : Page
+    public partial class RegattaUserControl : UserControl
     {
-        private MainWindow mainwindow;
-        public RegattaPage()
+        public RegattaUserControl()
         {
             InitializeComponent();
-        }
-
-        private void GoBack_OnClick(object sender, RoutedEventArgs e)
-        {
-            if (mainwindow == null)
-            {
-                mainwindow = new MainWindow();
-            }
-
-            mainwindow.ShowDialog();
-
-
-
         }
     }
 }
