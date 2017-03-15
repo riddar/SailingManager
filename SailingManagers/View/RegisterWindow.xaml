@@ -8,9 +8,9 @@
         Title="RegisterWindow" Height="500" Width="500">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -24,54 +24,29 @@
             <ColumnDefinition Width="*"/>
 
         </Grid.ColumnDefinitions>
-        <TextBlock  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" IsHitTestVisible="False" 
-                      Width="150" Foreground="DarkGray">
-            
-             Select a team from the list on the right and press
-                <LineBreak/>
-                add button to add team to your regatta
-                <LineBreak/>
-                Select a boat from the list on your right andd press
-                <LineBreak/>
-                add button to add boat to your regatta
-                <LineBreak/>
-                When you added team + boat to regatta press save button
-        </TextBlock>
-        <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6">
-            <ListBox MinHeight="150">
-               
-            </ListBox>
-        
-        </StackPanel>
-        <StackPanel MinHeight="150" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="4">
+      
+       
+        <StackPanel MinHeight="150" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="4">
 
             <TextBlock>This is</TextBlock>
             <TextBlock>where the</TextBlock>
-            <TextBox>teamlist will be</TextBox>
+            <ListBox MinHeight="100">teamlist will be</ListBox>
 
 
         </StackPanel>
 
-        <StackPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="4">
+        <StackPanel Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="4">
 
             <TextBlock>This is</TextBlock>
             <TextBlock>where the</TextBlock>
-            <TextBox>teamlist will be</TextBox>
+            <ListBox MinHeight="100">RegattaList will be</ListBox>
 
 
         </StackPanel>
-        <StackPanel Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="4">
-
+        <StackPanel MinHeight="100" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="6">
             <TextBlock>This is</TextBlock>
             <TextBlock>where the</TextBlock>
-            <TextBox>RegattaList will be</TextBox>
-
-
-        </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" Grid.RowSpan="6">
-            <TextBlock>This is</TextBlock>
-            <TextBlock>where the</TextBlock>
-            <TextBox>boatlist will be</TextBox>
+            <ListBox MinHeight="100">boatlist will be</ListBox>
         </StackPanel>
         <Button Height="30" Width="70" Click="Add_OnClick" Content="Lägg till" Grid.Column="0" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
         <Button Height="30" Width="60" Click="Cancel_OnClick" Content="Avbryt" Grid.Column="2" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
