@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace SailingManagers.View
 {
     /// <summary>
-    /// Interaction logic for RegattaUserControl.xaml
+    /// Interaction logic for EntryPage.xaml
     /// </summary>
-    public partial class RegattaUserControl : UserControl
+    public partial class EntryPage : Page
     {
-        public RegattaUserControl()
+        public EntryPage()
         {
             InitializeComponent();
         }
-
-        
     }
 }

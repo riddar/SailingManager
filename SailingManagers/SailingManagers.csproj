@@ -64,11 +64,11 @@
     <Compile Include="View\CreateRegattasWindow.xaml.cs">
       <DependentUpon>CreateRegattasWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\EntryPage.xaml.cs">
+      <DependentUpon>EntryPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\RegattaPage.xaml.cs">
       <DependentUpon>RegattaPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\RegattaUserControl.xaml.cs">
-      <DependentUpon>RegattaUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
@@ -88,6 +88,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CreateEventsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EntryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,10 +115,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\RegattaPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\RegattaUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

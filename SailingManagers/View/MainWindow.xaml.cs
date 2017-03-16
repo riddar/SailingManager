@@ -21,9 +21,12 @@ namespace SailingManagers
     /// </summary>
     public partial class MainWindow : Window
     {
+        EntryPage entryPage = new EntryPage();
+        RegattaPage regattaPage = new RegattaPage();
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void Båt_OnClick(object sender, RoutedEventArgs e)
@@ -72,12 +75,17 @@ namespace SailingManagers
         private void Entrypage_DoubleClick(object sender, MouseButtonEventArgs e)
         {
             
+           
+            MainWindowFrame.Navigate(entryPage);
         }
 
         private void RegattaPage_DoubleClick(object sender, MouseButtonEventArgs e)
         {
-            RegattaUserControl regattaUserControl = new RegattaUserControl();
             
+            MainWindowFrame.Navigate(regattaPage);
+
         }
+
+
     }
 }
