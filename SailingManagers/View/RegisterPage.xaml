@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SailingManagers.View"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="300" d:DesignWidth="400"
       Title="RegisterPage">
 
     <Grid>
@@ -50,8 +50,10 @@
             <TextBlock>where the</TextBlock>
             <ListBox MinHeight="100">boatlist will be</ListBox>
         </StackPanel>
-        <Button Height="30" Width="70" Click="Add_OnClick" Content="Lägg till" Grid.Column="2" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
+        <WrapPanel Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="4" Grid.RowSpan="3">
+            <Button Height="30" Width="70" Click="Add_OnClick" Content="Lägg till" Grid.Column="2" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
         <Button Height="30" Width="60" Click="Cancel_OnClick" Content="Avbryt" Grid.Column="3" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
         <Button Height="30" Width="60" Click="Save_OnClick" Content="Spara" Grid.Column="4" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
+        </WrapPanel>
     </Grid>
 </Page>
