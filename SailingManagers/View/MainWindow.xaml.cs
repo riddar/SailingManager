@@ -26,7 +26,8 @@ namespace SailingManagers
         public MainWindow()
         {
             InitializeComponent();
-            
+            MainWindowFrame.Navigate(regattaPage);
+
         }
 
         private void Båt_OnClick(object sender, RoutedEventArgs e)
@@ -74,18 +75,34 @@ namespace SailingManagers
 
         private void Entrypage_DoubleClick(object sender, MouseButtonEventArgs e)
         {
+
+         
+           MainWindowFrame.Navigate(entryPage);
             
-           
-            MainWindowFrame.Navigate(entryPage);
         }
 
         private void RegattaPage_DoubleClick(object sender, MouseButtonEventArgs e)
         {
-            
+           
             MainWindowFrame.Navigate(regattaPage);
+           
 
         }
+        public void ClearHistory()
+        {
+            if (!this.MainWindowFrame.CanGoBack && !this.MainWindowFrame.CanGoForward)
+            {
+                return;
+            }
 
+            var entry = this.MainWindowFrame.RemoveBackEntry();
+            while (entry != null)
+            {
+                entry = this.MainWindowFrame.RemoveBackEntry();
+            }
+
+            this.MainWindowFrame.Navigate(new PageFunction<string>() { RemoveFromJournal = true });
+        }
 
     }
 }
