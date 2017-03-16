@@ -41,7 +41,7 @@
                 upp
             </ListBox>
         </StackPanel>
-        <StackPanel Name="UserControl"  Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="7" Grid.RowSpan="2">
+        <StackPanel Name="UserControl"  Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="7" Grid.RowSpan="4">
             <Frame Name="MainWindowFrame">
             </Frame>
         </StackPanel>

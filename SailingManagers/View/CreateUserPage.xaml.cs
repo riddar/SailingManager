@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SailingManagers.View
 {
     /// <summary>
-    /// Interaction logic for RegisterWindow.xaml
+    /// Interaction logic for CreateUserPage.xaml
     /// </summary>
-    public partial class RegisterWindow : Window
+    public partial class CreateUserPage : Page
     {
-        public RegisterWindow()
+        public CreateUserPage()
         {
             InitializeComponent();
-        }
-
-        private void Add_OnClick(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void Cancel_OnClick(object sender, RoutedEventArgs e)

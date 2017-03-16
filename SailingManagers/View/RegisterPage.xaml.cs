@@ -10,26 +10,32 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SailingManagers.View
 {
     /// <summary>
-    /// Interaction logic for EventsWindow.xaml
+    /// Interaction logic for RegisterPage.xaml
     /// </summary>
-    public partial class EventsWindow : Window
+    public partial class RegisterPage : Page
     {
-        public EventsWindow()
+        public RegisterPage()
         {
             InitializeComponent();
         }
 
-        private void Save_OnClick(object sender, RoutedEventArgs e)
+        private void Cancel_OnClick(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void Cancel_OnClick(object sender, RoutedEventArgs e)
+        private void Add_OnClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Save_OnClick(object sender, RoutedEventArgs e)
         {
 
         }

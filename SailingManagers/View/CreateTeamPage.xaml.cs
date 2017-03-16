@@ -10,18 +10,29 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SailingManagers.View
 {
     /// <summary>
-    /// Interaction logic for UserWindow.xaml
+    /// Interaction logic for CreateTeamPage.xaml
     /// </summary>
-    public partial class UserWindow : Window
+    public partial class CreateTeamPage : Page
     {
-        public UserWindow()
+        public CreateTeamPage()
         {
             InitializeComponent();
+        }
+
+        private void Add_OnClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Cancel_OnClick(object sender, RoutedEventArgs e)
+        {
+
         }
 
         private void Save_OnClick(object sender, RoutedEventArgs e)
@@ -29,7 +40,7 @@ namespace SailingManagers.View
 
         }
 
-        private void Cancel_OnClick(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

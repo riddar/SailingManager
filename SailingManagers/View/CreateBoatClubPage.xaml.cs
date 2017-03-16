@@ -10,18 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SailingManagers.View
 {
     /// <summary>
-    /// Interaction logic for RegattasWindow.xaml
+    /// Interaction logic for CreateBoatClubPage.xaml
     /// </summary>
-    public partial class RegattasWindow : Window
+    public partial class CreateBoatClubPage : Page
     {
-        public RegattasWindow()
+        public CreateBoatClubPage()
         {
             InitializeComponent();
+        }
+
+        private void Save_OnClick(object sender, RoutedEventArgs e)
+        {
+
         }
 
         private void Cancel_OnClick(object sender, RoutedEventArgs e)

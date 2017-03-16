@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SailingManagers
+namespace SailingManagers.View
 {
     /// <summary>
-    /// Interaction logic for BoatWindow.xaml
+    /// Interaction logic for CreateBoatPage.xaml
     /// </summary>
-    public partial class BoatWindow : Window
+    public partial class CreateBoatPage : Page
     {
-        public BoatWindow()
+        public CreateBoatPage()
         {
             InitializeComponent();
         }

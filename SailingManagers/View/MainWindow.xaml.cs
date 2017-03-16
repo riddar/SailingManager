@@ -23,6 +23,13 @@ namespace SailingManagers
     {
         EntryPage entryPage = new EntryPage();
         RegattaPage regattaPage = new RegattaPage();
+        private CreateBoatClubPage createBoatClubPage = new CreateBoatClubPage();
+        private CreateBoatPage createBoatPage = new CreateBoatPage();
+        private CreateEventPage createEventPage = new CreateEventPage();
+        private CreateRegattaPage createRegattaPage = new CreateRegattaPage();
+        private CreateTeamPage createTeamPage = new CreateTeamPage();
+        private CreateUserPage createUserPage = new CreateUserPage();
+        private RegisterPage registerPage = new RegisterPage();
         public MainWindow()
         {
             InitializeComponent();
@@ -32,58 +39,58 @@ namespace SailingManagers
 
         private void Båt_OnClick(object sender, RoutedEventArgs e)
         {
-          BoatWindow boatWindow = new BoatWindow();
-            boatWindow.Show();
+            ClearHistory();
+            MainWindowFrame.Navigate(createBoatPage);
 
         }
 
         private void Teams_OnClick(object sender, RoutedEventArgs e)
         {
-            TeamWindow teamWindow = new TeamWindow();
-            teamWindow.Show();
+            ClearHistory();
+            MainWindowFrame.Navigate(createTeamPage);
         }
 
         private void Regattor_OnClick(object sender, RoutedEventArgs e)
         {
-            RegattasWindow regattasWindow = new View.RegattasWindow();
-            regattasWindow.Show();
+            ClearHistory();
+            MainWindowFrame.Navigate(createRegattaPage);
         }
 
         private void Users_OnClick(object sender, RoutedEventArgs e)
         {
-            UserWindow userWindow = new UserWindow();
-            userWindow.Show();
+            ClearHistory();
+            MainWindowFrame.Navigate(createUserPage);
         }
 
         private void Events_OnClick(object sender, RoutedEventArgs e)
         {
-            EventsWindow eventWindow = new EventsWindow();
-            eventWindow.Show();
+            ClearHistory();
+            MainWindowFrame.Navigate(createEventPage);
         }
 
         private void Båtklubb_OnClick(object sender, RoutedEventArgs e)
         {
-            BoatClubWindow boatClubWindow = new BoatClubWindow();
-            boatClubWindow.Show();
+            ClearHistory();
+            MainWindowFrame.Navigate(createBoatClubPage);
         }
 
         private void Register_OnClick(object sender, RoutedEventArgs e)
         {
-            RegisterWindow registerWindow = new View.RegisterWindow();
-            registerWindow.Show();
+            ClearHistory();
+            MainWindowFrame.Navigate(registerPage);
         }
 
         private void Entrypage_DoubleClick(object sender, MouseButtonEventArgs e)
         {
 
-         
+            ClearHistory();
            MainWindowFrame.Navigate(entryPage);
             
         }
 
         private void RegattaPage_DoubleClick(object sender, MouseButtonEventArgs e)
         {
-           
+            ClearHistory();
             MainWindowFrame.Navigate(regattaPage);
            
 
