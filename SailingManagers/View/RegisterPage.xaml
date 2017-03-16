@@ -30,28 +30,28 @@
 
         <StackPanel MinHeight="150" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="4">
 
-            <TextBlock>This is</TextBlock>
+            <ComboBox>Teams</ComboBox>
             <TextBlock>where the</TextBlock>
-            <ListBox MinHeight="100">teamlist will be</ListBox>
+            <ListBox MinHeight="80">teamlist will be</ListBox>
 
 
         </StackPanel>
 
         <StackPanel Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="4">
 
-            <TextBlock>This is</TextBlock>
+            <ComboBox>Regattas</ComboBox>
             <TextBlock>where the</TextBlock>
-            <ListBox MinHeight="100">RegattaList will be</ListBox>
+            <ListBox MinHeight="80">RegattaList will be</ListBox>
 
 
         </StackPanel>
-        <StackPanel MinHeight="100" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="6">
-            <TextBlock>This is</TextBlock>
+        <StackPanel MinHeight="80" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="6">
+            <ComboBox>Boats</ComboBox>
             <TextBlock>where the</TextBlock>
             <ListBox MinHeight="100">boatlist will be</ListBox>
         </StackPanel>
-        <Button Height="30" Width="70" Click="Add_OnClick" Content="Lägg till" Grid.Column="0" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
-        <Button Height="30" Width="60" Click="Cancel_OnClick" Content="Avbryt" Grid.Column="2" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
-        <Button Height="30" Width="60" Click="Save_OnClick" Content="Spara" Grid.Column="3" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
+        <Button Height="30" Width="70" Click="Add_OnClick" Content="Lägg till" Grid.Column="2" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
+        <Button Height="30" Width="60" Click="Cancel_OnClick" Content="Avbryt" Grid.Column="3" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
+        <Button Height="30" Width="60" Click="Save_OnClick" Content="Spara" Grid.Column="4" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="3"/>
     </Grid>
 </Page>
