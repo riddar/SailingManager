@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SailingManagers", "SailingManagers\SailingManagers.csproj", "{F612E5C8-DC30-4226-91C2-5F22FF90E8F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SailingManagerDatabase", "SailingManagerDatabase\SailingManagerDatabase.csproj", "{78AD4577-4819-4808-A758-70CAB086699C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F612E5C8-DC30-4226-91C2-5F22FF90E8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F612E5C8-DC30-4226-91C2-5F22FF90E8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F612E5C8-DC30-4226-91C2-5F22FF90E8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78AD4577-4819-4808-A758-70CAB086699C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78AD4577-4819-4808-A758-70CAB086699C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78AD4577-4819-4808-A758-70CAB086699C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78AD4577-4819-4808-A758-70CAB086699C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
