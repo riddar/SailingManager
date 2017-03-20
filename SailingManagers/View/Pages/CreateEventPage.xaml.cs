@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace SailingManagers.View
 {
     /// <summary>
-    /// Interaction logic for CreateEventPage.xaml
+    /// Interaction logic for CreateBoatClubPage.xaml
     /// </summary>
     public partial class CreateEventPage : Page
     {

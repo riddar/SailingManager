@@ -23,9 +23,9 @@ namespace SailingManagers
     {
         EntryPage entryPage = new EntryPage();
         RegattaPage regattaPage = new RegattaPage();
-        private CreateBoatClubPage createBoatClubPage = new CreateBoatClubPage();
+        private CreateEventPage _createEventPage = new CreateEventPage();
         private CreateBoatPage createBoatPage = new CreateBoatPage();
-        private CreateEventPage createEventPage = new CreateEventPage();
+        private CreateBoatClubPage _createBoatClubPage = new CreateBoatClubPage();
         private CreateRegattaPage createRegattaPage = new CreateRegattaPage();
         private CreateTeamPage createTeamPage = new CreateTeamPage();
         private CreateUserPage createUserPage = new CreateUserPage();
@@ -65,13 +65,13 @@ namespace SailingManagers
         private void Events_OnClick(object sender, RoutedEventArgs e)
         {
             ClearHistory();
-            MainWindowFrame.Navigate(createEventPage);
+            MainWindowFrame.Navigate(_createEventPage);
         }
 
         private void Båtklubb_OnClick(object sender, RoutedEventArgs e)
         {
             ClearHistory();
-            MainWindowFrame.Navigate(createBoatClubPage);
+            MainWindowFrame.Navigate(_createBoatClubPage);
         }
 
         private void Register_OnClick(object sender, RoutedEventArgs e)

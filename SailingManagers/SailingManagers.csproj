@@ -160,58 +160,58 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="View\CreateBoatClubPage.xaml.cs">
-      <DependentUpon>CreateBoatClubPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\CreateBoatPage.xaml.cs">
-      <DependentUpon>CreateBoatPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\CreateEventPage.xaml.cs">
+    <Compile Include="View\Pages\CreateEventPage.xaml.cs">
       <DependentUpon>CreateEventPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\CreateRegattaPage.xaml.cs">
+    <Compile Include="View\Pages\CreateBoatPage.xaml.cs">
+      <DependentUpon>CreateBoatPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\CreateBoatClubPage.xaml.cs">
+      <DependentUpon>CreateBoatClubPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\CreateRegattaPage.xaml.cs">
       <DependentUpon>CreateRegattaPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\CreateTeamPage.xaml.cs">
+    <Compile Include="View\Pages\CreateTeamPage.xaml.cs">
       <DependentUpon>CreateTeamPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\CreateUserPage.xaml.cs">
+    <Compile Include="View\Pages\CreateUserPage.xaml.cs">
       <DependentUpon>CreateUserPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\EntryPage.xaml.cs">
+    <Compile Include="View\Pages\EntryPage.xaml.cs">
       <DependentUpon>EntryPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\RegattaPage.xaml.cs">
+    <Compile Include="View\Pages\RegattaPage.xaml.cs">
       <DependentUpon>RegattaPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\RegisterPage.xaml.cs">
+    <Compile Include="View\Pages\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
-    <Page Include="View\CreateBoatClubPage.xaml">
+    <Page Include="View\Pages\CreateEventPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreateBoatPage.xaml">
+    <Page Include="View\Pages\CreateBoatPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreateEventPage.xaml">
+    <Page Include="View\Pages\CreateBoatClubPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreateRegattaPage.xaml">
+    <Page Include="View\Pages\CreateRegattaPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreateTeamPage.xaml">
+    <Page Include="View\Pages\CreateTeamPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreateUserPage.xaml">
+    <Page Include="View\Pages\CreateUserPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\EntryPage.xaml">
+    <Page Include="View\Pages\EntryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -227,11 +227,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\RegattaPage.xaml">
+    <Page Include="View\Pages\RegattaPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\RegisterPage.xaml">
+    <Page Include="View\Pages\RegisterPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
